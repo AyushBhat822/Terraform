@@ -54,5 +54,3 @@ resource "aws_volume_attachment" "ebs_att" {
 output "o3" {
 value = aws_volume_attachment.ebs_att
 }
-
-
