@@ -44,7 +44,7 @@ value = aws_ebs_volume.st1
 
 }
 
-# step 3 : Attach the ebs volume
+# step 3 : Attach the ebs volume to instance
 resource "aws_volume_attachment" "ebs_att" {
    device_name = "/dev/sdh"
   volume_id   = aws_ebs_volume.st1.id
