@@ -1,5 +1,5 @@
 # Terraform
-In this repo I share the Terraform code learnt during the training at LinuxWorld Informatics under the guidance of World Record Holder Vimal Daga.
+In this repo I share the Terraform code learnt during the Terraform training at LinuxWorld Informatics under the guidance of World Record Holder Vimal Daga.
 Files usage:
 * ec2storage.tf - In this file 
 1. I launched a server in AWS cloud services
