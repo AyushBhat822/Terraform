@@ -2,7 +2,7 @@
 In this repo I share the HCL code that I am learning currently in the Terraform training at LinuxWorld Informatics under the guidance of World Record Holder Vimal Daga.
 Files usage:
 
-*var.tf - Usage of variables shown
+* var.tf - Usage of variables shown
 * ec2storage.tf - In this file 
 1. I launched a server in AWS cloud services
 2. Then created an ebs volume 
