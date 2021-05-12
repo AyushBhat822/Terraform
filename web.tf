@@ -11,19 +11,22 @@ ami = "ami-010aff33ed5991201"
 instance_type = "t2.micro"
 security_groups = [ "webport-allow" ]
 key_name = "terraform_key"
-
 tags = { 
     Name = "Web Server by TF"
      }
 }
 
-resource  "null_resource"  "nullremote1" {
+output "my_public_ip_is" {
+value = aws_instance.webos1.public_ip
+}
+
+resource  "null_resource"  "nullremote3" {
 
 connection {
     type     = "ssh"
     user     = "ec2-user"
     private_key = file("C:/Users/Ayush/Downloads/terraform_key.pem")
-    host     = "aws_instance.webos1.public_ip"
+    host     = aws_instance.webos1.public_ip
   }
 
 provisioner "remote-exec" {
@@ -51,13 +54,13 @@ resource "aws_volume_attachment" "ebs_att" {
   instance_id = aws_instance.webos1.id
 }
 
-resource  "null_resource"  "nullremote2" {
+resource  "null_resource"  "nullremote4" {
 
 connection {
     type     = "ssh"
     user     = "ec2-user"
     private_key = file("C:/Users/Ayush/Downloads/terraform_key.pem")
-    host     = "aws_instance.webos1.public_ip"
+    host     =  aws_instance.webos1.public_ip
   }
 
 provisioner "remote-exec" {
@@ -70,11 +73,9 @@ provisioner "remote-exec" {
   }
 }
 
-
-resource  "null_resource"  "nullremote3" {
+resource  "null_resource"  "nullremote6" {
 
 provisioner "local-exec" {
- command = "chrome http://ur-public-ip /web/index.php
-}
-
+  command = "chrome http://15.207.249.8/web/index.php"
+ }
 }
