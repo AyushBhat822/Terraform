@@ -3,7 +3,6 @@ In this repo I share the Terraform code learnt during the training at LinuxWorld
 Files usage:
 * ec2storage.tf - In this file I launched an server in AWS cloud services, then created an ebs volume and at last attached the ebs volume to the server.
 * web.tf - Plan
-# In this code we are utilizing terraform to configure webserver
 1. Launch an ec2 instance
 2. Install apache webserver and php interpreter
 3. Go and download code from Github 
