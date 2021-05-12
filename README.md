@@ -1,7 +1,10 @@
 # Terraform
 In this repo I share the Terraform code learnt during the training at LinuxWorld Informatics under the guidance of World Record Holder Vimal Daga.
 Files usage:
-* ec2storage.tf - In this file I launched an server in AWS cloud services, then created an ebs volume and at last attached the ebs volume to the server.
+* ec2storage.tf - In this file 
+1. I launched an server in AWS cloud services
+2. Then created an ebs volume 
+3. At last attached the ebs volume to the server.
 * web.tf - Plan
 1. Launch an ec2 instance
 2. Install apache webserver and php interpreter
