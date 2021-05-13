@@ -17,3 +17,7 @@ Files usage:
 7. Specify format type of ebs volume
 8. Mount  ebs volume to /var/www/html/
 9. Retreive the Public ip of the OS and provide it to the client
+
+In **aws-ws1** we learnt how to **split** large code into multiple files 
+**WHY TO USE MULTIPLE FILES IN TERRAFORM**
+NEED: While working in team different members work on different files so this is preferred.
