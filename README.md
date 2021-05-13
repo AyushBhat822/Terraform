@@ -19,5 +19,5 @@ Files usage:
 9. Retreive the Public ip of the OS and provide it to the client
 
 In **aws-ws1** we learnt how to **split** large code into multiple files 
-**WHY TO USE MULTIPLE FILES IN TERRAFORM**
-NEED: While working in team different members work on different files so this is preferred.
+**WHY TO USE MULTIPLE FILES IN TERRAFORM?**
+* While working in team different members work on different files so this is preferred.
